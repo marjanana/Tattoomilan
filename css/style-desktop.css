@@ -1,0 +1,367 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+	line-height: 1.8em;
+	font-size: 15pt;
+	color: #666666;
+	background-color: #999999;
+	}
+
+	header
+	{
+	margin: 0 0 2em 0;
+	padding-top: 0 03em 0;
+	padding-bottom: 0 01em 0; 
+	color:#CCC
+	}
+	
+		header h2
+		{
+			margin: 0 0 1em 0;
+			font-size: 2em;
+		}
+
+	.button
+	{
+		padding: 0 2.5em 0 2.5em;
+		font-size: 1.2em;
+		line-height: 3.25em;
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+	color: #000;
+	background-color: #000;
+	padding-top: 1px;
+	padding-right: 0;
+	padding-left: 0;
+	height: auto;
+	}
+	
+	#main-wrapper
+	{
+	padding: 3em 0em 0em 0em;
+	background-repeat: repeat-y;
+	background-image: pozadina1.jpg;
+	}
+	
+	#footer-wrapper
+	{
+	padding: 3em 0 0 0;
+	background-repeat: repeat;
+	/* [disabled]background-color: #3399FF; */
+	color: #CCCCCC;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+	position: relative;
+	z-index: 10;
+	background-color: #000;
+	color: #CCCCCC;
+	margin-top: -1px;
+	margin-bottom: -2px;
+	height: 50px;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+   
+	#logo
+	{
+	z-index: 5;
+	max-width: 100%;
+	margin-top: 1px;
+	/* bata dodao */
+	height: 56px;
+	/* [disabled]margin-bottom: -5px; */
+	}
+		#logo h1
+		{
+	display: block;
+	/* [disabled]font-size: xx-large; */
+	font-weight: bold;
+	color: #CCC;
+	max-width: 100%;
+	padding-bottom: 0 01em 0;
+	/* [disabled]font-family: "Times New Roman", Times, serif; */
+		}
+		
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	
+	#nav
+	{
+	position: absolute;
+	top: 15px;
+	right: 38px;
+	cursor: default;
+	}
+
+		#nav > ul
+		{
+	margin: 0;
+	font-family: "Arial Black", Gadget, sans-serif;
+		}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+		
+			#nav > ul > li
+			{
+				display: inline-block;
+			}
+			
+				#nav > ul > li > span,
+				#nav > ul > li > a
+				{
+	text-decoration: none;
+	outline: 0;
+	border: solid 1px rgba(255,255,255,0);
+	border-radius: 4px;
+	padding: 0.5em 1.25em 0.5em 1.25em;
+	letter-spacing: -0.05em;
+	font-family: 'Ariel Black, Gadget', sans-serif;
+	font-size: 0.9em;
+	color: #999;
+	-moz-transition: color 0.35s ease-in-out;
+	-webkit-transition: color 0.35s ease-in-out;
+	-o-transition: color 0.35s ease-in-out;
+	-ms-transition: color 0.35s ease-in-out;
+	transition: color 0.35s ease-in-out;
+				}
+
+					#nav > ul > li:hover > span,
+					#nav > ul > li:hover > a
+					{
+	color: #fff;
+	font-size: medium;
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+					}
+
+			#nav > ul > li.current_page_item > span,
+			#nav > ul > li.current_page_item > a
+			{
+	/* [disabled]background: rgba(0,0,0,0.5); */
+	/* [disabled]box-shadow: 0px 1px 0px 0px #363636; */
+	color: #fff;
+	font-size: large;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+			}
+
+			#nav > ul > li:first-child
+			{
+				margin-left: 0;
+			}
+
+			#nav > ul > li.break
+			{
+				margin-left: 20em;
+			}
+			
+	.dropotron
+	{
+		background: #222;
+		background: rgba(28,28,28,0.95);
+		background-image: url('images/overlay.png');
+		border-radius: 8px;
+		padding: 1.25em;
+		min-width: 12em;
+		line-height: 2em;
+		border: solid 1px #282828;
+		box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.5);
+	}
+	
+		.dropotron-level-0
+		{
+			font-size: 0.8em;
+			margin-top: 0.8em;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			border-top: 0;
+		}
+		
+		.dropotron a,
+		.dropotron span
+		{
+			color: #999;
+			text-decoration: none;
+			-moz-transition: color 0.35s ease-in-out;
+			-webkit-transition: color 0.35s ease-in-out;
+			-o-transition: color 0.35s ease-in-out;
+			-ms-transition: color 0.35s ease-in-out;
+			transition: color 0.35s ease-in-out;
+		}
+
+		.dropotron li:hover > a,
+		.dropotron li:hover > span
+		{
+			color: #fff;
+		}
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 4em 6em 5em 6em;
+	}
+	
+	.homepage #main
+	{
+		padding: 1.5em 0 3em 0;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		padding: 1em 0em 5em 0em;
+		font-size: 13pt;
+	}
+
+/*********************************************************************************/
+/* Slider                                                                        */
+/*********************************************************************************/
+
+	#slider
+	{
+	width: 896px;
+	height: 460px;
+	margin-bottom: 3em;
+	cursor: default;
+	}
+	
+		#slider .caption-line
+		{
+	position: absolute;
+	width: 100%;
+	top: 235px;
+	left: 0px;
+	padding: 1.25em 3em 1.25em 3em;
+	line-height: 1.5em;
+	background: #1a1a1a;
+	background: rgba(24,24,24,0.85);
+	text-align: center;
+	font-weight: normal;
+	color: #CCCCCC;
+	font-weight: 200;
+	font-size: large;
+	z-index: 20;
+	height: 78px;
+	/* [disabled]background-color: #8B8B89; */
+	letter-spacing: normal;
+		}
+
+		#slider .indicator
+		{
+			bottom: 4em;
+		}
+	
+			#slider .indicator ul
+			{
+			}
+	
+				#slider .indicator ul li
+				{
+					margin: 0 4px 0 4px;
+				}
+
+		#slider .viewer
+		{
+	width: 896px;
+	height: 455px;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+		}
+	
+			#slider .viewer .reel
+			{
+			}
+	
+			#slider .viewer .reel .slide
+			{
+	color: #000000;
+			}
+	
+				#slider .viewer .reel .slide img
+				{
+	width: 896px;
+	height: 463px;
+				}
+				
+/*********************************************************************************/
+/* Poptrox                                                                       */
+/*********************************************************************************/
+
+	.poptrox-popup
+	{
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-o-box-sizing: content-box;
+		-ms-box-sizing: content-box;
+		box-sizing: content-box;
+		border-radius: 8px;
+		background: #fff;
+		padding: 0.5em;
+		box-shadow: 0 1em 2em 0.5em rgba(0,0,0,0.25);
+		border: 1px solid #444;
+	}
+	
+		.poptrox-popup .loader
+		{
+			width: 48px;
+			height: 48px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -24px;
+			margin-top: -24px;
+			background: url('images/loader.gif');
+		}
+	
+		.poptrox-popup .closer
+		{
+			position: absolute;
+			right: 0.7em;
+			top: 0.7em;
+			width: 1.25em;
+			height: 1.25em;
+			border-radius: 1.25em;
+			text-align: center;
+			line-height: 1.15em;
+			font-size: 1.5em;
+			background: rgba(128,128,128,0.25);
+			color: #fff;
+			border: solid 2px #fff;
+			-moz-transition: background-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out;
+		}
+		
+			.poptrox-popup .closer:hover
+			{
+				background: rgba(255,255,255,0.35);
+			}

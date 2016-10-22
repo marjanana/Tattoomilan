@@ -1,0 +1,6 @@
+body:after,
+.button:before,
+#main:before
+{
+	display: none;
+}
